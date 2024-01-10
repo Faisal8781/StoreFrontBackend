@@ -93,6 +93,8 @@ or you use the default user you should create 2 database.
 
   down:DROP TABLE orders_products;
 
+Before npm start you should type in the terimnal db-migrate up to create the tables in your dev enviorment
+
 ### 5. npm start in terimnal will start the server in development mode and you can use postman and in requirements.md file you can see all the endpoints you can use
 
 ### 6. "npm test" in terimnal will run test jasmine and this is the script: "set ENV=test && npx tsc && db-migrate --env test up && jasmine && db-migrate --env test reset" and it will run the data base in test mode by setting ENV=test after that will drop the table
